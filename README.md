@@ -24,7 +24,8 @@ What our group wants to discover is if our models trained on real vs fake news d
 Can still perform adequately when tested on news articles from this later range of dates: XXXX
 * *Ensemble Method*: Using the average of the three different labels applied from each model on test set articles, 
 we'd like to see if the combined influence of our three independent models can result in a performance greater 
-than any individual model. 
+than any individual model.
+* *Election Time*: Investigate whether or not abnormal patterns of artical bias appear around election times.
 
 
 
