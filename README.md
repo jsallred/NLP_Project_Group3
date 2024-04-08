@@ -60,11 +60,13 @@ You have two options to obtain the dataset:
 
 1. **Run the Scraping Scripts**:
    - Utilize the provided Jupyter notebook (`playing_with_scraping.ipynb`) to scrape news articles from various sources. This notebook contains a modified scraper designed specifically for our project's needs.
+   - We collected data from various sources using this scraper, including Fox News, Alternet, and NBC News.
 
 ##### Pre-Scraped Data
 
 1. **Download Pre-Scraped Data**:
    - Download the pre-scraped dataset (`BABE_scraped.csv`) from our GitHub repository's `scraped_data` folder.
+   - This CSV file contains columns for URL, article content, and political bias type.
 
 ### 3. Data Preprocessing
 
@@ -82,6 +84,8 @@ Ensure the scraped data is formatted properly:
 
 #### LSTM (Bidirectional)
 
+This model processes text data using bidirectional LSTM layers to classify political bias.
+
 1. **Load and Tokenize Data**:
    - Load the preprocessed data.
    - Tokenize the text using the `Tokenizer` class from Keras.
@@ -98,6 +102,8 @@ Ensure the scraped data is formatted properly:
    - Calculate accuracy and other relevant metrics.
 
 #### Naive Bayes
+
+This model applies the Naive Bayes algorithm to classify political bias based on text features.
 
 1. **Load and Vectorize Data**:
    - Load the preprocessed data.
@@ -124,3 +130,7 @@ Ensure the scraped data is formatted properly:
 
 1. **Execute Script**:
    - Open and run the provided Jupyter notebook `Basic Naive Nayes (Rough Outline).ipynb`.
+
+## Further Exploration
+
+In addition to our performance analysis, we plan to conduct further studies to test various hypotheses related to political bias in news articles. These hypotheses include cross-domain performance, influence of geopolitical events, article length bias, word frequency bias, and interpretability of models.
