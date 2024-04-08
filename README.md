@@ -16,27 +16,28 @@ Welcome to our NLP Project! We are group 3 in the Natural Language Processing co
 In addition to our performance analysis, we have a couple different studies we want to conduct
 on our data in order to test improvement amongst each individually:
 * *Cross-Domain Performance Hypothesis/Source Credibility Hypothesis*
-Hypothesis: Models trained on articles from one source platform (e.g., Reddit, general online magazines) may not perform as effectively when tested on articles from a different source (e.g., government websites, news cites, etc).
-Method? Train models using articles from a specific source platform and evaluate their performance when applied to articles sourced from alternative platforms.
+- Hypothesis: Models trained on articles from one source platform (e.g., Reddit, general online magazines) may not perform as effectively when tested on articles from a different source (e.g., government websites, news cites, etc).
+- Method? Train models using articles from a specific source platform and evaluate their performance when applied to articles sourced from alternative platforms.
 
 * *Geopolitical Events Influence Hypothesis*
-Hypothesis? Geopolitical events such as elections, wars, or diplomatic summits will influence the political bias of news articles. (i.e. utilizing headlines to test for bias or not)
-Method? Track major geopolitical events and analyze their correlation with changes in political bias scores of news articles around those events.
+- Hypothesis: Geopolitical events such as elections, wars, or diplomatic summits will influence the political bias of news articles. (i.e. utilizing headlines to test for bias or not)
+- Method? Track major geopolitical events and analyze their correlation with changes in political bias scores of news articles around those events.
 
 * *Length of Article Bias Hypothesis*
-Hypothesis: Longer articles tend to exhibit more nuanced and potentially biased language compared to shorter articles.
-Method: Compare the length of articles with their assigned political bias scores to assess the relationship between article length and bias.
-Impact of Data Size Hypothesis?
-Hypothesis: Increasing the size of the training data will improve the performance of the RNN models.
-Method?  Train RNN models using different sizes of training data and observe changes in performance metrics.
+- Hypothesis: Longer articles tend to exhibit more nuanced and potentially biased language compared to shorter articles.
+- Method: Compare the length of articles with their assigned political bias scores to assess the relationship between article length and bias.
+
+* *Impact of Data Size Hypothesis*
+- Hypothesis: Increasing the size of the training data will improve the performance of the RNN models.
+- Method?  Train RNN models using different sizes of training data and observe changes in performance metrics.
 
 * *Word Frequency Bias Hypothesis*
-Hypothesis: The frequency of certain politically charged words (e.g., "liberal," "conservative") within articles correlates with the perceived political bias.
-Method? Analyze the occurrence of politically charged words in articles and compare it with the assigned political bias scores.
+- Hypothesis: The frequency of certain politically charged words (e.g., "liberal," "conservative") within articles correlates with the perceived political bias.
+- Method? Analyze the occurrence of politically charged words in articles and compare it with the assigned political bias scores.
 
 * *Interpretability Hypothesis (Prefer this as last resort if anything)*
-Hypothesis: Naive Bayes models will be more interpretable compared to RNN and LSTM models.
-Method? Analyze the feature importance in Naive Bayes models and compare it to the attention weights in RNN and LSTM models.
+- Hypothesis: Naive Bayes models will be more interpretable compared to RNN and LSTM models.
+- Method? Analyze the feature importance in Naive Bayes models and compare it to the attention weights in RNN and LSTM models.
 
 ### 1. Environment Setup
 
