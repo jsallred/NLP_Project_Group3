@@ -1,4 +1,4 @@
-# NLP Project: Fake vs Real News Text Classification
+# NLP Project: Political Bias Text Classification
 
 **Team Members**:
 
@@ -10,22 +10,117 @@
 
 
 **Description:**: <br/>
-Welcome to our NLP Project! We are group 3 in the Natural Language Processing course CSCI 3832-001 at CU Boulder 
-in the Spring 2024 Semester. In this project we will construct a variety of text classification models and train them on a 
-dateset of news articles labeled as 'real news' and 'fake news'. Our goal in this project is to implement a series of three different 
-models varying in complexity (Such as Naive Bayes, RNN, BiLSTM), and to analyze their performance vs complexity 
-ratio to see which models can give us the best performance when applied on our test set with respect to their training time.
+Welcome to our NLP Project! We are group 3 in the Natural Language Processing course CSCI 3832-001 at CU Boulder in the Spring 2024 Semester. In this project, we will delve into the realm of text classification by constructing various models and training them on a dataset comprising news articles. Just as every day inundates us with new information shaping our perspectives, the integrity of this information is paramount. Ensuring its neutrality and lack of bias empowers readers to form uninfluenced and rational conclusions. Our endeavor explores a spectrum of NLP algorithms and machine learning models aimed at discerning political bias within media articles.
 
 **Further Exploration:** <br/>
 In addition to our performance analysis, we have a couple different studies we want to conduct
-on our data using our trained models,they are as follows:
-* *Temporal Analysis*: As politics and media voices change over time, so do the news articles describing them. 
-What our group wants to discover is if our models trained on real vs fake news data from the following range of dates: XXXX
-Can still perform adequately when tested on news articles from this later range of dates: XXXX
-* *Ensemble Method*: Using the average of the three different labels applied from each model on test set articles, 
-we'd like to see if the combined influence of our three independent models can result in a performance greater 
-than any individual model.
-* *Election Time*: Investigate whether or not abnormal patterns of artical bias appear around election times.
+on our data in order to test improvement amongst each individually:
+* *Cross-Domain Performance Hypothesis/Source Credibility Hypothesis*
+Hypothesis: Models trained on articles from one source platform (e.g., Reddit, general online magazines) may not perform as effectively when tested on articles from a different source (e.g., government websites, news cites, etc).
+Method? Train models using articles from a specific source platform and evaluate their performance when applied to articles sourced from alternative platforms.
 
+* *Geopolitical Events Influence Hypothesis*
+Hypothesis? Geopolitical events such as elections, wars, or diplomatic summits will influence the political bias of news articles. (i.e. utilizing headlines to test for bias or not)
+Method? Track major geopolitical events and analyze their correlation with changes in political bias scores of news articles around those events.
 
+* *Length of Article Bias Hypothesis*
+Hypothesis: Longer articles tend to exhibit more nuanced and potentially biased language compared to shorter articles.
+Method: Compare the length of articles with their assigned political bias scores to assess the relationship between article length and bias.
+Impact of Data Size Hypothesis?
+Hypothesis: Increasing the size of the training data will improve the performance of the RNN models.
+Method?  Train RNN models using different sizes of training data and observe changes in performance metrics.
 
+* *Word Frequency Bias Hypothesis*
+Hypothesis: The frequency of certain politically charged words (e.g., "liberal," "conservative") within articles correlates with the perceived political bias.
+Method? Analyze the occurrence of politically charged words in articles and compare it with the assigned political bias scores.
+
+* *Interpretability Hypothesis (Prefer this as last resort if anything)*
+Hypothesis: Naive Bayes models will be more interpretable compared to RNN and LSTM models.
+Method? Analyze the feature importance in Naive Bayes models and compare it to the attention weights in RNN and LSTM models.
+
+### 1. Environment Setup
+
+1. **Python Installation**:
+   - If you haven't already installed Python, download and install it from the [official Python website](https://www.python.org/). Ensure you install Python 3.7 or later.
+
+2. **Library Installation**:
+   - Open a terminal or command prompt.
+   - Install required libraries using pip:
+     ```
+     pip install tensorflow scikit-learn pandas numpy matplotlib newspaper3k requests beautifulsoup4
+     ```
+
+### 2. Dataset
+
+#### Obtaining the Dataset
+
+You have two options to obtain the dataset:
+
+##### Scraping Data
+
+1. **Run the Scraping Scripts**:
+   - Utilize the provided Jupyter notebook (`playing_with_scraping.ipynb`) to scrape news articles from various sources. This notebook contains a modified scraper designed specifically for our project's needs.
+
+##### Pre-Scraped Data
+
+1. **Download Pre-Scraped Data**:
+   - Download the pre-scraped dataset (`BABE_scraped.csv`) from our GitHub repository's `scraped_data` folder.
+
+### 3. Data Preprocessing
+
+#### Formatting Data
+
+Ensure the scraped data is formatted properly:
+
+1. **Convert Text to Lowercase**:
+   - Convert all text data to lowercase to ensure consistency in processing.
+
+2. **Drop Missing Values**:
+   - Remove any rows with missing values in the 'content' column.
+
+### 4. Models
+
+#### LSTM (Bidirectional)
+
+1. **Load and Tokenize Data**:
+   - Load the preprocessed data.
+   - Tokenize the text using the `Tokenizer` class from Keras.
+
+2. **Pad Sequences**:
+   - Pad sequences to ensure uniform length using `pad_sequences` method from Keras.
+
+3. **Train Model**:
+   - Build and train the LSTM model using the provided Jupyter notebook (`test_lstm.ipynb`).
+   - Monitor training progress and early stopping using appropriate callbacks.
+
+4. **Evaluate Model**:
+   - Evaluate the trained model on the test set.
+   - Calculate accuracy and other relevant metrics.
+
+#### Naive Bayes
+
+1. **Load and Vectorize Data**:
+   - Load the preprocessed data.
+   - Vectorize the text data using `TfidfVectorizer` from scikit-learn.
+
+2. **Split Data**:
+   - Split the data into training, validation, and testing sets.
+
+3. **Train Model**:
+   - Train the Naive Bayes classifier on the training set using the provided Jupyter notebook (`Basic Naive Nayes (Rough Outline).ipynb`).
+
+4. **Evaluate Model**:
+   - Evaluate the trained model on the test set.
+   - Print classification report containing precision, recall, F1-score, and support for each class.
+
+### 5. Running the Code
+
+#### LSTM Model
+
+1. **Execute Script**:
+   - Open and run the provided Jupyter notebook `test_lstm.ipynb`.
+
+#### Naive Bayes Model
+
+1. **Execute Script**:
+   - Open and run the provided Jupyter notebook `Basic Naive Nayes (Rough Outline).ipynb`.
