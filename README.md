@@ -15,7 +15,8 @@ Welcome to our NLP Project! We are group 3 in the Natural Language Processing co
 **Further Exploration:** <br/>
 In addition to our performance analysis, we have a couple different studies we want to conduct
 on our data in order to test improvement amongst each individually:
-* *Cross-Domain Performance Hypothesis/Source Credibility Hypothesis*
+
+*Cross-Domain Performance Hypothesis/Source Credibility Hypothesis*
 - Hypothesis: Models trained on articles from one source platform (e.g., Reddit, general online magazines) may not perform as effectively when tested on articles from a different source (e.g., government websites, news cites, etc).
 - Method? Train models using articles from a specific source platform and evaluate their performance when applied to articles sourced from alternative platforms.
 
