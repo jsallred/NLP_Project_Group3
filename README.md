@@ -56,6 +56,8 @@ on our data in order to test improvement amongst each individually:
 
 #### Obtaining the Dataset
 
+Our data scraped directives we gathered through a modified scraper we designed, which draws upon the dataset from url https://huggingface.co/datasets/mediabiasgroup/BABE/resolve/main/BABE.csv
+
 You have two options to obtain the dataset:
 
 ##### Scraping Data
