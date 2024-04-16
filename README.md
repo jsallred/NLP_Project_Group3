@@ -104,6 +104,34 @@ This model processes text data using bidirectional LSTM layers to classify polit
 4. **Evaluate Model**:
    - Evaluate the trained model on the test set.
    - Calculate accuracy and other relevant metrics.
+  
+#### Simple RNN for Text Classification
+
+This model implemented using PyTorch for text classification tasks. The model utilizes pre-trained word embeddings from GloVe and is trained on a dataset of news articles to classify them into different categories.
+
+1. **Load Data and Preprocess**:
+   - Load news articles dataset and preprocess text data.
+   - Convert text to lowercase and handle missing values.
+
+2. **Prepare Datasets and DataLoaders**:
+   - Split the data into training, validation, and test sets.
+   - Create custom PyTorch Dataset and DataLoader objects for efficient training.
+
+3. **Embedding Layer**:
+   - Utilize pre-trained word embeddings from GloVe to initialize the embedding layer.
+   - Freeze the embedding layer during training to prevent weight updates.
+
+4. **Model Architecture**:
+   - Build a Simple RNN model consisting of embedding, RNN, and fully connected layers.
+   - Train the model using cross-entropy loss and Adam optimizer.
+
+5. **Training Loop**:
+   - Iterate over the training dataset in mini-batches.
+   - Update model parameters using backpropagation and monitor validation loss.
+
+6. **Evaluation**:
+   - Evaluate the trained model on the test set to assess accuracy.
+   - Calculate accuracy metrics to measure model performance.
 
 #### Naive Bayes
 
