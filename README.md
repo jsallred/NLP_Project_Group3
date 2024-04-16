@@ -117,7 +117,7 @@ This model applies the Naive Bayes algorithm to classify political bias based on
    - Split the data into training, validation, and testing sets.
 
 3. **Train Model**:
-   - Train the Naive Bayes classifier on the training set using the provided Jupyter notebook (`Basic Naive Nayes (Rough Outline).ipynb`).
+   - Train the Naive Bayes classifier on the training set using the provided Jupyter notebook (`NB_Baseline.ipynb`).
 
 4. **Evaluate Model**:
    - Evaluate the trained model on the test set.
