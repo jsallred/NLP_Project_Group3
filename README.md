@@ -133,7 +133,12 @@ This model applies the Naive Bayes algorithm to classify political bias based on
 #### Naive Bayes Model
 
 1. **Execute Script**:
-   - Open and run the provided Jupyter notebook `Basic Naive Nayes (Rough Outline).ipynb`.
+   - Open and run the provided Jupyter notebook `NB_Baseline.ipynb`.
+  
+#### RNN Model
+
+1. **Execute Script**:
+   - Open and run the provided Jupyter notebook `basic_RNN.ipynb`.
 
 ## Further Exploration
 
