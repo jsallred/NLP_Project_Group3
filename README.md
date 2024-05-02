@@ -17,33 +17,6 @@
 **Description:**: <br/>
 Welcome to our NLP Project! We are group 3 in the Natural Language Processing course CSCI 3832-001 at CU Boulder in the Spring 2024 Semester. In this project, we will delve into the realm of text classification by constructing various models and training them on a dataset comprising news articles. Just as every day inundates us with new information shaping our perspectives, the integrity of this information is paramount. Ensuring its neutrality and lack of bias empowers readers to form uninfluenced and rational conclusions. Our endeavor explores a spectrum of NLP algorithms and machine learning models aimed at discerning political bias within media articles.
 
-**Potential Studies:** <br/>
-In addition to our performance analysis, we have a couple different studies we want to conduct
-on our data in order to test improvement amongst each individually:
-
-*Cross-Domain Performance Hypothesis/Source Credibility Hypothesis*
-- Hypothesis: Models trained on articles from one source platform (e.g., Reddit, general online magazines) may not perform as effectively when tested on articles from a different source (e.g., government websites, news cites, etc).
-- Method? Train models using articles from a specific source platform and evaluate their performance when applied to articles sourced from alternative platforms.
-
-*Geopolitical Events Influence Hypothesis*
-- Hypothesis: Geopolitical events such as elections, wars, or diplomatic summits will influence the political bias of news articles. (i.e. utilizing headlines to test for bias or not)
-- Method? Track major geopolitical events and analyze their correlation with changes in political bias scores of news articles around those events.
-
-*Length of Article Bias Hypothesis*
-- Hypothesis: Longer articles tend to exhibit more nuanced and potentially biased language compared to shorter articles.
-- Method: Compare the length of articles with their assigned political bias scores to assess the relationship between article length and bias.
-
-*Impact of Data Size Hypothesis*
-- Hypothesis: Increasing the size of the training data will improve the performance of the RNN models.
-- Method?  Train RNN models using different sizes of training data and observe changes in performance metrics.
-
-*Word Frequency Bias Hypothesis*
-- Hypothesis: The frequency of certain politically charged words (e.g., "liberal," "conservative") within articles correlates with the perceived political bias.
-- Method? Analyze the occurrence of politically charged words in articles and compare it with the assigned political bias scores.
-
-*Interpretability Hypothesis (Prefer this as last resort if anything)*
-- Hypothesis: Naive Bayes models will be more interpretable compared to RNN and LSTM models.
-- Method? Analyze the feature importance in Naive Bayes models and compare it to the attention weights in RNN and LSTM models.
 
 ### 1. Environment Setup
 
@@ -176,3 +149,33 @@ This model applies the Naive Bayes algorithm to classify political bias based on
 ## Further Exploration
 
 In addition to our performance analysis, we plan to conduct further studies to test various hypotheses related to political bias in news articles. These hypotheses include cross-domain performance, influence of geopolitical events, article length bias, word frequency bias, and interpretability of models.
+
+   **Potential Studies:** <br/>
+   
+   *Cross-Domain Performance Hypothesis/Source Credibility Hypothesis*
+   - Hypothesis: Models trained on articles from one source platform (e.g., Reddit, general online magazines) may not perform as effectively when tested on articles from a different source (e.g., government websites, news cites, etc).
+   - Method? Train models using articles from a specific source platform and evaluate their performance when applied to articles sourced from alternative platforms.
+   
+   *Geopolitical Events Influence Hypothesis*
+   - Hypothesis: Geopolitical events such as elections, wars, or diplomatic summits will influence the political bias of news articles. (i.e. utilizing headlines to test for bias or not)
+   - Method? Track major geopolitical events and analyze their correlation with changes in political bias scores of news articles around those events.
+   
+   *Length of Article Bias Hypothesis*
+   - Hypothesis: Longer articles tend to exhibit more nuanced and potentially biased language compared to shorter articles.
+   - Method: Compare the length of articles with their assigned political bias scores to assess the relationship between article length and bias.
+   
+   *Impact of Data Size Hypothesis*
+   - Hypothesis: Increasing the size of the training data will improve the performance of the RNN models.
+   - Method?  Train RNN models using different sizes of training data and observe changes in performance metrics.
+   
+   *Word Frequency Bias Hypothesis*
+   - Hypothesis: The frequency of certain politically charged words (e.g., "liberal," "conservative") within articles correlates with the perceived political bias.
+   - Method? Analyze the occurrence of politically charged words in articles and compare it with the assigned political bias scores.
+   
+   *Interpretability Hypothesis (Prefer this as last resort if anything)*
+   - Hypothesis: Naive Bayes models will be more interpretable compared to RNN and LSTM models.
+   - Method? Analyze the feature importance in Naive Bayes models and compare it to the attention weights in RNN and LSTM models.
+
+
+## Results
+
