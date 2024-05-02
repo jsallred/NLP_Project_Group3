@@ -21,11 +21,16 @@ Welcome to our NLP Project! We are group 3 in the Natural Language Processing co
 ### 1. Environment Setup
 
 1. **Python Installation**:
-   - If you haven't already installed Python, download and install it from the [official Python website](https://www.python.org/). Ensure you install Python 3.9 or later.
+   - If you haven't already installed Python, download and install it from the [official Python website](https://www.python.org/). Ensure you install Python 3.10 or later.
 
 2. **Library Installation**:
    - Open a terminal or command prompt.
    - Install required libraries using pip:
+     ```
+     pip install -r requirements.txt
+     ```
+      or 
+
      ```
      pip install tensorflow scikit-learn pandas numpy matplotlib newspaper3k requests beautifulsoup4
      ```
