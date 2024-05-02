@@ -3,15 +3,15 @@
 **Team Members**:
 
 1. Joseph Allred - joal3275@colorado.edu
-   - CONTRIBUTIONS: scribed meetings, build deliverables, found datasets, explored related works, developed README & all documentation
+   - CONTRIBUTIONS: Scribed meetings, built deliverables, found datasets, explored related works, developed README & all documentation.
 2. Jevan Wiltz - jewi1870@colorado.edu 
-   - CONTRIBUTIONS: found datasets, explored related works, Build first implementations of Naive Bayes, developed README & all documentation
+   - CONTRIBUTIONS: Found datasets, explored related works, built first implementations of Naive Bayes, developed README & all documentation.
 3. Streck Salmon - stsa4539@colorado.edu
-   - CONTRIBUTIONS: found datasets, built first implementation of LSTM
+   - CONTRIBUTIONS: Found datasets, built first implementation of LSTM.
 4. Ben Lipman - beli4539@colorado.edu
-   - CONTRIBUTIONS: contributed to webscraping script for BABE, found datasets, explored RNN implementations
+   - CONTRIBUTIONS: Contributed to webscraping script for BABE, found datasets, explored RNN implementations.
 5. Bowman Russel - boru7277@colorado.edu
-   - CONTRIBUTIONS: contributed to webscraping script for BABE, found datasets, exploring combining datasets for increased model performance
+   - CONTRIBUTIONS: Contributed to webscraping script for BABE, found datasets, exploring combining datasets for increased model performance.
 
 
 **Description:**: <br/>
