@@ -30,25 +30,22 @@ Welcome to our NLP Project! We are group 3 in the Natural Language Processing co
      pip install tensorflow scikit-learn pandas numpy matplotlib newspaper3k requests beautifulsoup4
      ```
 
-### 2. Dataset
+### 2. Datasets
 
-#### Obtaining the Dataset
+#### Obtaining the Training/Testing Dataset
 
-Our data scraped directives we gathered through a modified scraper we designed, which draws upon the dataset from url https://huggingface.co/datasets/mediabiasgroup/BABE/resolve/main/BABE.csv
+1. By running the 4th block of our scrape_datasets.ipynb we will obtain the raw BABE dataset used to train and test our models.
 
-You have two options to obtain the dataset:
+#### Obtaining the Dataset Used to Evaluate Different News Organization's Biases
 
-##### Scraping Data
+1. By running the 2th block of our scrape_datasets.ipynb we will obtain the raw PoliticalBias dataset used evaluate the biases of the top 5 news organizations in the dataset. 
 
-1. **Run the Scraping Scripts**:
-   - Utilize the provided Jupyter notebook (`playing_with_scraping.ipynb`) to scrape news articles from various sources. This notebook contains a modified scraper designed specifically for our project's needs.
-   - We collected data from various sources using this scraper, including Fox News, Alternet, and NBC News.
+#### Getting the final Unproccessed Dataset (getting web content from the URLs downloaded) 
 
-##### Pre-Scraped Data
-
-1. **Download Pre-Scraped Data**:
-   - Download the pre-scraped dataset (`BABE_scraped.csv`) from our GitHub repository's `scraped_data` folder.
-   - This CSV file contains columns for URL, article content, and political bias type.
+1. By running the 3rd and 6th blocks of scrape_datasets.ipynb you can obtain the unproccessed final PoliticalBias and BABE datasets respectively. After proccessing these will then be used to train and test our models as well as evaluate the bias of different news organizations.
+2. These datasets will be in the .csv form of [url, text_content, bias_label]. Bias label in the form: Left Leaning = 0, Right Leaning = 2, Center = 1.
+3. These unproccessed final datasets will later have their text formatted for training, testing and making predictions. 
+4. Please note that scrape_datasets.ipynb took our team 6 hours to run with our computational recources. 
 
 ### 3. Data Preprocessing
 
