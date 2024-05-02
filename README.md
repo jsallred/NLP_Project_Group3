@@ -3,16 +3,21 @@
 **Team Members**:
 
 1. Joseph Allred - joal3275@colorado.edu
-2. Jevan Wiltz - jewi1870@colorado.edu
+   - CONTRIBUTIONS: scribed meetings, build deliverables, found datasets, explored related works, developed README & all documentation
+2. Jevan Wiltz - jewi1870@colorado.edu 
+   - CONTRIBUTIONS: found datasets, explored related works, Build first implementations of Naive Bayes, developed README & all documentation
 3. Streck Salmon - stsa4539@colorado.edu
+   - CONTRIBUTIONS: found datasets, built first implementation of LSTM
 4. Ben Lipman - beli4539@colorado.edu
+   - CONTRIBUTIONS: contributed to webscraping script for BABE, found datasets, explored RNN implementations
 5. Bowman Russel - boru7277@colorado.edu
+   - CONTRIBUTIONS: contributed to webscraping script for BABE, found datasets, exploring combining datasets for increased model performance
 
 
 **Description:**: <br/>
 Welcome to our NLP Project! We are group 3 in the Natural Language Processing course CSCI 3832-001 at CU Boulder in the Spring 2024 Semester. In this project, we will delve into the realm of text classification by constructing various models and training them on a dataset comprising news articles. Just as every day inundates us with new information shaping our perspectives, the integrity of this information is paramount. Ensuring its neutrality and lack of bias empowers readers to form uninfluenced and rational conclusions. Our endeavor explores a spectrum of NLP algorithms and machine learning models aimed at discerning political bias within media articles.
 
-**Further Exploration:** <br/>
+**Potential Studies:** <br/>
 In addition to our performance analysis, we have a couple different studies we want to conduct
 on our data in order to test improvement amongst each individually:
 
